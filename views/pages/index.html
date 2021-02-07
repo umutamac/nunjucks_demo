@@ -8,24 +8,21 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="/style.css">
     <title>Nunjucks Demo</title>
 </head>
 
 <body>
     {% include "../_partials/header.html" ignore missing %}
-    <p>This the default content of header. This should show up in the browser</p> 
-
 
     <h1>This is index.html</h1>
 
     {% block content %}
-    <p>This is the default content</p>
+    <p>This is the default content, it can be brought in by using "super"</p>
     {% endblock %}
 
     {% include "../_partials/footer.html" ignore missing %}
-    <p>This is the default content of footer. This should NOT appear in browser</p>
     
-  
 </body>
 
 </html>

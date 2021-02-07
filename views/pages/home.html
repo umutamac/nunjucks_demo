@@ -1,14 +1,14 @@
 {% extends "pages/index.html" %}
+
 {% block content %}
-
 <div class="container">
-    <h2>Home</h2>
-    <br>
-    <p>{{home[0].first_name}}</p>
-    <br>
-    <p>{{home[0].email}}</p>
 
-    <button type="button" class="btn btn-outline-primary"><a href="/about">go to about</a></button>
+    {{super}}
+
+    <p>This is the home template.</p>
+    <a href="/janet" class="btn btn-primary" role="button">Get Janet</a>
+    <a href="/michael" class="btn btn-primary" role="button">Get Michael</a>
+
 </div>
 <script>
 
