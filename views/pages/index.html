@@ -18,11 +18,10 @@
     <h1>This is index.html</h1>
 
     {% block content %}
-    <p>This is the default content, it can be brought in by using "super"</p>
+    <p>This is the default content from index.html, it can be brought in by using "super()"</p>
     {% endblock %}
 
     {% include "../_partials/footer.html" ignore missing %}
-    
 </body>
 
 </html>
