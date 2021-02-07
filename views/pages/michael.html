@@ -2,12 +2,16 @@
 
 {% block content %}
 <div class="container">
-    <h2>{{home[0].first_name}}</h2>
+    <h2>{{michael[0].first_name}}</h2>
     <br>
-    <p>{{home[0].email}}</p>
+    <img src="{{ michael[0].avatar}}" alt="headshot">
+    <br>
+    <p>{{ michael[0].email }}</p>
 
     <a href="/janet" class="btn btn-outline-primary">Get Janet</a>
     <a href="/" class="btn btn-primary">Go to home</a>
+    <br>
+    <p>Credit to <a href="https://reqres.in">https://reqres.in</a></p>
 
 </div>
 <script>

@@ -8,10 +8,10 @@ router.get("/",(req, res, next) => {
         method: "GET",
         url: "https://reqres.in/api/users?page=2",
         headers: {"Content-Type":"application/json"}
-    }).then((data) => {
-        //console.log("home ----- response came back");
+    }).then((payload) => {
+        //console.log("mike ----- response came back");
         //console.log(data);
-        res.render("pages/michael.html", {home: data.data.data});
+        res.render("pages/michael.html", {michael: payload.data.data});
     }).catch((err) => console.log(err))
 })
 

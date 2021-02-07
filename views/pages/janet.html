@@ -2,14 +2,19 @@
 
 {% block content %}
 <div class="container">
-    <h2>{{about.first_name}}</h2>
+    <h2>{{ janet.first_name }}</h2>
     <br>
-    <p>{{about.email}}</p>
+    <img src="{{ janet.avatar }}" alt="headshot">
+    <br>
+    <p>{{ janet.email }}</p>
 
     <a href="/michael" class="btn btn-outline-primary">Get Michael</a>
     <a href="/" class="btn btn-primary">Go to home</a>
+    <br>
+    <p>Credit to <a href="https://reqres.in">https://reqres.in</a></p>
+
 </div>
 <script>
-    
+
 </script>
 {% endblock %}
